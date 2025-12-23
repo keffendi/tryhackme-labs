@@ -21,7 +21,7 @@ Introduces the concept of a Security Operations Center (SOC), its purpose, and t
 
 ## Task 3 – People (SOC Roles)
 **Description:**  
-Overview of SOC team roles and responsibilities, including Level 1, Level 2, and Level 3 analysts, and support roles like Detection Engineers and SOC Managers.
+Overview of SOC team roles and responsibilities, including Level 1, Level 2, and Level 3 analysts, and support roles like Detection Engineers and Security Engineers.
 
 **Evidence Screenshot:**  
 ![Task 3 Roles](Task3.png)
