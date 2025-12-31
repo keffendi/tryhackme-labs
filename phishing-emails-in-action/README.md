@@ -17,9 +17,17 @@ A suspicious email claiming to be from PayPal instructed the recipient to cancel
 Document findings and escalate to Tier 2 for further handling.
 
 **Screenshots:**
-- Email content: ![Email content](Paypal.png)
+- Email content:
 
-- Sender address: : ![Sender address](noreply.png)
+![Email content](Paypal.png)
 
-- Task answer submission: ![Task answer submission](task2answer.png)
+- Sender address: :
+
+![Sender address](noreply.png)
+
+- Task answer submission:
+
+![Task answer submission](task2answer.png)
+
+
 
