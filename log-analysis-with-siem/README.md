@@ -104,4 +104,39 @@ I filtered for 'port' and source='syslog'
 ---
 
 
-### Task 5 - Web Application Logs
+### Task 6 - Web Application Logs
+### Practice Scenario
+
+As a SOC Level 1 Analyst on shift, I received an alert indicating a spike in activity on the organization’s web server. My task was to investigate the web server logs in the SIEM to determine what happened and whether the activity was malicious.
+
+![WebAppLogs](WebAppLogs.png)
+
+### Question 1: URI Path with Highest Requests
+
+**Question:**  
+Which URI path had the highest number of requests?
+
+**Investigation approach:**  
+I used the query provided in the lab to search the web server logs and identify which URI path had the most requests.
+
+![URIpath](URIpath.png)
+
+### Question 2: Source IP Address
+
+**Question:**  
+Which IP address was the source of the activity?
+**Answer:** 
+10.10.243.134
+
+### Question 3: Activity Classification
+
+**Question:**  
+How can this activity be classified?
+**Answer:**  Brute Force
+
+### Question 4: Tool Used
+
+**Question:**  
+Which tool did the threat actor use?
+**Answer:**
+WPScan
