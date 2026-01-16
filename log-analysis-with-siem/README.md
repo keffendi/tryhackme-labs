@@ -1,6 +1,7 @@
 ## Log Analysis with SIEM
 **Platform:** TryHackMe
 
+### Task 4 - Windows Logs
 ### Practice Scenario
 
 As a SOC Level 1 Analyst on shift, I received an alert about a suspicious network connection on port 5678 from the host WIN-105. My task was to investigate the activity using Windows logs in the SIEM and determine whether it was suspicious or required escalation.
@@ -37,3 +38,68 @@ What is the name of the scheduled task that was created on the system?
 I looked at the details from the previous event and checked the Windows logs to find the name of the scheduled task.
 
 ![Office365](Office365.png)
+
+
+---
+
+
+### Task 5 - Linux Logs
+### Practice Scenario
+
+As an SOC Level 1 Analyst on shift, I received an alert indicating possible persistence activity on an Ubuntu server. The alert suggested that a new remote SSH user may have been created. My task was to investigate the system activity using Linux logs in the SIEM and determine what actions occurred and whether the behavior was suspicious.
+
+![LinuxLogs](LinuxLogs.png)
+
+### Question 1: Timestamp of Account Creation
+
+**Question:**  
+What was the timestamp of the remote-SSH account creation?
+
+**Investigation approach:**  
+I checked filtered for SSH account creation events to identify exactly when the new user was added.
+
+![newuser](newuser.png)
+
+### Question 2: User Escalation
+
+**Question:**  
+Which user successfully escalated privileges to root prior to the action from the first question?
+
+**Investigation approach:**  
+I filtered the logs for `sudo` events
+
+![jackbrown](jackbrown.png)
+
+### Question 3: Source IP Address
+
+**Question:**  
+From which IP address did the user from the previous question successfully log in to the system?
+
+**Investigation approach:**  
+I filtered 'jack-brown' 'ssh' to find the source IP address of the successful login.
+
+![jackipaddress](jackipaddress.png)
+
+### Question 4: Failed Login Attempts
+
+**Question:**  
+How many failed login attempts occurred before the successful login?
+
+**Investigation approach:**  
+I filtered for "failed passwords"
+
+![failedpassword](failedpassword.png)
+
+### Question 5: Persistence Port
+
+**Question:**  
+Which port is the persistence mechanism configured to connect to?
+
+**Investigation approach:**  
+I filtered for 'port' and source='syslog'
+
+![port](port.png)
+
+---
+
+
