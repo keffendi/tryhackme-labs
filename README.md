@@ -1,4 +1,4 @@
-# Cybersecurity Portfolio
+# TryHackMe Labs
 
 Hands-on Security Operations Center labs completed on TryHackMe.
 
